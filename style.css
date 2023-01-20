@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 475px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#main{
+    padding: 30px 10px;
+    border: 3px solid;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.inputArea{
+    border-style: hidden;
+}
+
+#input{
+    border: none;
+    width: 300px;
+    height: 22px;
+    resize: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+#searchButton{
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#searchButton img{
+    height: 16px;
+}
+
+.day::placeholder{
+    color: rgb(34, 31, 31);
+    opacity: 1;
+}
+
+.night{
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 10px;
+}
+
+.day{
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+.night::placeholder{
+    color: rgb(202, 190, 190);
+    opacity: 1;
+}
+
+
+
+
+
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(186, 168, 168, 0.3);
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperature{
+    font-size: 45px;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.medium {
+    font-size: 20px;
+}
+
+.misc{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 5px;
+    background-color:rgba(186, 168, 168, 0.3);
+}
+
+.miscContent{
+    /* border: 2px solid white; */
+    padding: 5px;
+}
+
+.miscContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.miscInner{
+    display: flex;
+    flex-direction: row;
+}
+
+.miscName{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.miscValue{
+    font-size: 25px;
+}
+
+.symbol{
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.visible{
+    visibility: visible;
+    opacity:1;
+    transition:visibility 0.5s linear,opacity 0.5s linear;
+    z-index: 1;
+    top: 0;
+}
+
+.notVisible{
+    /* display: none; */
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.5s linear,opacity 0.5s linear;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+#loading img{
+    width:  475px;
+    height: max-content;
+}

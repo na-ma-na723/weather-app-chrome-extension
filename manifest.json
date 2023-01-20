@@ -1,0 +1,15 @@
+{
+    "name": "Weather",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo.png"
+    },
+    "description": "Weather App that automatically locates and displays your current weather forecast. Easier than looking outside!",
+    "icons": {
+        "128": "logo.png"
+    },
+    "permissions": ["activeTab", "geolocation"]
+
+}

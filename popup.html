@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div id="loading" class="visible">
+        <img src="./assests/loadingScreen.gif" alt="">
+    </div>
+
+
+    <div id="main" class="main switch notVisible">
+        <div id="inputBox">
+            <input type="text" placeholder="City Name" id="input" class="inputArea switch">
+            <button id="searchButton" class="inputArea"> <img src="./assests/search.png" alt=""> </i></button>
+        </div>
+    
+        <div class="info switch" id="infoBox">
+            <h2 id="cityName" class="medium">Dehradun</h2>
+
+            <p id="time" class="small">Time</p>
+
+            <p id="temperature">0°C</p>
+
+            <p id="feelLike" class="small">Feels 0°C</p>
+
+            <div class="desc">
+                <img src="" alt="" id="icon">
+                <p id="description" class="medium">Clear</p>    
+            </div>
+
+        </div>
+
+        <div class="misc switch">
+            <div class="miscContent">
+                <p class="miscName">Humidity</p>
+                <div class="miscInner">
+                    <p id="humidity" class="miscValue">34</p>
+                    <p class="symbol">%</p>
+                </div>
+            </div>
+
+            <div class="miscContent">
+                <p class="miscName">Wind</p>
+                <div class="miscInner">
+                    <p id="wind" class="miscValue">100</p>
+                    <p class="symbol">Km/h</p>
+                </div>
+            </div>
+
+            <div class="miscContent">
+                <p class="miscName">Pressure</p>
+                <div class="miscInner">
+                    <p id="pressure" class="miscValue">100</p>
+                    <p class="symbol">hPa</p>
+                </div>
+            </div>
+
+            <div class="miscContent">
+                <p class="miscName">Low</p>
+                <div class="miscInner">
+                    <p id="minTemp" class="miscValue">Min Temp</p>
+                    <p class="symbol">°C</p>
+                </div>
+            </div>
+
+            <div class="miscContent">
+                <p class="miscName">High</p>
+                <div class="miscInner">
+                    <p id="maxTemp" class="miscValue">Max Temp</p>
+                    <p class="symbol">°C</p>
+                </div> 
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
